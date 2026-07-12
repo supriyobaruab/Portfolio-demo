@@ -2,22 +2,48 @@ import Section from "./Section.jsx";
 
 const PROJECTS = [
   {
+    title: "Bachelor Meal Management System",
+    path: "meal-house5A",
+    image: "/images/projects/meal-system.png",
+    imageAlt: "A home server rack with networking equipment",
+    description:
+      "A web application for managing daily meals, expenses, and member contributions in a bachelor household.",
+    tech: ["Node.js", "Express.js"],
+  },
+  {
+    title: "AIUB Notice Board",
+    path: "discord-bots",
+    image: "/images/projects/discord-bots.png",
+    imageAlt: "discord",
+    description:
+      "Automatically sends Discord notifications whenever a new notice is published on the AIUB Notice Board.",
+    tech: ["JavaScript", "Discord.js", "APIs"],
+  },
+  {
+    title: "Cafe Management System",
+    path: "cafe-management",
+    image: "/images/projects/cafe.png",
+    imageAlt: "A home server rack with networking equipment",
+    description:
+      "A cafe management system that streamlines order processing, inventory tracking, billing, and daily business operations.",
+    tech: ["Java"],
+  },
+  {
+    title: "3Dify",
+    path: "e-commerce",
+    image: "/images/projects/ecom.png",
+    imageAlt: "A home server rack with networking equipment",
+    description: "A Demo E-Commerce website for my friend's business",
+    tech: ["HTML", "CSS", "JavaScript"],
+  },
+  {
     title: "Personal Home Server",
     path: "home-server",
     image: "/images/projects/home-server.png",
     imageAlt: "A home server rack with networking equipment",
     description:
       "A self-managed home server used to host services, learn networking, and retain control over personal digital tools.",
-    tech: ["Linux", "Networking", "Docker"],
-  },
-  {
-    title: "Discord Bots",
-    path: "discord-bots",
-    image: "/images/projects/discord-bots.png",
-    imageAlt: "A programmable bot beside an abstract chat interface",
-    description:
-      "Custom bots that automate tasks, support server moderation, and make online communities more engaging.",
-    tech: ["JavaScript", "Discord.js", "APIs"],
+    tech: ["Ubuntu,Docker,Immich"],
   },
 ];
 
