@@ -2,16 +2,19 @@ import Section from "./Section.jsx";
 
 const HOBBY_GROUPS = [
   {
-    title: "Music",
-    description: "Finding new sounds and playlists for every mood.",
-    layout: "spotlight",
-    images: ["/images/hobbies/music.svg"],
+    title: "Travelling",
+    description: "Discovering new places, stories, and perspectives.",
+    images: [
+      "/images/hobbies/travel-1.svg",
+      "/images/hobbies/travel-2.svg",
+      "/images/hobbies/travel-3.svg",
+      "/images/hobbies/travel-4.svg",
+    ],
   },
   {
     title: "Biking",
     description:
       "Exploring the city, clearing the mind, and enjoying the road.",
-    layout: "feature",
     images: [
       "/images/hobbies/biking-1.svg",
       "/images/hobbies/biking-2.svg",
@@ -22,7 +25,6 @@ const HOBBY_GROUPS = [
   {
     title: "Travelling",
     description: "Discovering new places, stories, and perspectives.",
-    layout: "mosaic",
     images: [
       "/images/hobbies/travel-1.svg",
       "/images/hobbies/travel-2.svg",
@@ -32,24 +34,7 @@ const HOBBY_GROUPS = [
   },
 ];
 
-function HobbyGroup({ title, description, images, index, layout }) {
-  const galleryClass =
-    layout === "spotlight"
-      ? "mt-7 grid grid-cols-1"
-      : "mt-7 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4";
-
-  const imageClass = (imageIndex) => {
-    if (layout === "spotlight") return "aspect-[16/7] max-w-4xl";
-    if (layout === "mosaic") {
-      return imageIndex === 0
-        ? "row-span-2 aspect-auto sm:col-span-2"
-        : "aspect-square";
-    }
-    return imageIndex === 0
-      ? "col-span-2 aspect-[2/1] sm:aspect-auto"
-      : "aspect-square";
-  };
-
+function HobbyGroup({ title, description, images, index }) {
   return (
     <div>
       <div className="flex items-baseline gap-3">
@@ -63,11 +48,15 @@ function HobbyGroup({ title, description, images, index, layout }) {
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
         {description}
       </p>
-      <div className={galleryClass}>
+      <div className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
         {images.map((image, i) => (
           <div
             key={image}
-            className={`surface-card group relative overflow-hidden rounded-xl ${imageClass(i)}`}
+            className={`surface-card group relative overflow-hidden rounded-xl ${
+              i === 0
+                ? "col-span-2 aspect-[2/1] sm:aspect-auto"
+                : "aspect-square"
+            }`}
           >
             <img
               src={image}
