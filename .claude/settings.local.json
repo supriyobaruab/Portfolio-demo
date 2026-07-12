@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(mkdir -p /tmp/portfolio-md-backup)",
+      "Bash(mv /Users/Supriyo/Desktop/Portfolio/portfolio.md /tmp/portfolio-md-backup/)",
+      "Bash(yes \"\")",
+      "Bash(rm -rf /Users/Supriyo/Desktop/Portfolio/.claude)",
+      "Read(//Users/Supriyo/**)",
+      "Bash(mv /tmp/portfolio-md-backup/portfolio.md /Users/Supriyo/Desktop/Portfolio/portfolio.md)",
+      "Bash(rmdir /tmp/portfolio-md-backup)",
+      "Bash(npm install *)",
+      "Bash(npm init *)",
+      "Bash(node shot.mjs)",
+      "Bash(npx playwright *)",
+      "Bash(npm run *)",
+      "Skill(run)",
+      "Bash(curl -sf http://localhost:5173)",
+      "Bash(break)",
+      "Read(//private/tmp/**)",
+      "Bash(npx vite *)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(mkdir -p /private/tmp/claude-502/-Users-Supriyo-Desktop-Portfolio/0a515a39-7c69-409f-81c8-dc94eae412f9/scratchpad)",
+      "Bash(cp /tmp/screenshot.mjs /private/tmp/claude-502/-Users-Supriyo-Desktop-Portfolio/0a515a39-7c69-409f-81c8-dc94eae412f9/scratchpad/screenshot.mjs)",
+      "Bash(node screenshot.mjs)",
+      "Bash(node debug-nav.mjs)",
+      "Bash(node debug-nav2.mjs)",
+      "Bash(node mobile-nav.mjs)"
+    ]
+  }
+}

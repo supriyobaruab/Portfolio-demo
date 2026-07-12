@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="440" viewBox="0 0 640 440">
+  <rect width="640" height="440" fill="#fdfcfa"/>
+  <rect x="1" y="1" width="638" height="438" fill="none" stroke="#1a1a1a" stroke-opacity="0.1" stroke-width="2"/>
+  <rect x="120" y="90" width="400" height="260" fill="none" stroke="#b45309" stroke-width="3"/>
+  <circle cx="320" cy="180" r="36" fill="none" stroke="#b45309" stroke-width="3"/>
+  <path d="M280 250 h80 M260 280 h120 M280 310 h80" stroke="#b45309" stroke-width="3"/>
+  <text x="320" y="400" text-anchor="middle" font-family="Georgia, 'Source Serif 4', serif" font-size="18" fill="#1a1a1a" fill-opacity="0.5">Add certificate image</text>
+</svg>

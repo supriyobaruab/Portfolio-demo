@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <rect width="640" height="480" fill="#fdfcfa"/>
+  <rect x="1" y="1" width="638" height="478" fill="none" stroke="#1a1a1a" stroke-opacity="0.1" stroke-width="2"/>
+  <g stroke="#b45309" stroke-width="4" fill="none">
+    <circle cx="220" cy="320" r="70"/>
+    <circle cx="420" cy="320" r="70"/>
+    <path d="M220 320 L330 180 L420 320 M330 180 L280 320 M330 180 L390 180"/>
+  </g>
+  <text x="320" y="420" text-anchor="middle" font-family="Georgia, 'Source Serif 4', serif" font-size="18" fill="#1a1a1a" fill-opacity="0.5">Bike rides — add a photo</text>
+</svg>

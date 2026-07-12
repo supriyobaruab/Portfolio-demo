@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background-color: #0c0a09;
+  color: #fafaf9;
+}
+
+::selection {
+  background-color: #f59e0b4d;
+  color: #fffbeb;
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-6xl;
+  }
+
+  .surface-card {
+    @apply bg-card border border-line;
+  }
+
+  .surface-nav {
+    @apply border-b border-line bg-base/90 backdrop-blur;
+  }
+
+  .mono-label {
+    @apply font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-faint;
+  }
+
+  .pill-tag {
+    @apply inline-flex items-center rounded-md border border-elevated/70 bg-elevated/50 px-2.5 py-1 font-mono text-[11px] font-medium text-stone-300;
+  }
+
+  .link-editorial {
+    @apply inline-flex cursor-pointer items-center gap-1.5 text-sm font-medium text-stone-200 underline decoration-stone-600 underline-offset-4 transition-colors hover:text-accent-bright hover:decoration-accent-bright;
+  }
+
+  .terminal-dot {
+    @apply h-2.5 w-2.5 rounded-full;
+  }
+}
