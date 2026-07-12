@@ -48,6 +48,14 @@ export default function Nav() {
 
         <div className="flex items-center gap-3">
           <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden items-center rounded-full border border-stone-600 px-4 py-1.5 text-[14px] font-medium text-stone-200 transition-colors hover:border-stone-400 hover:text-stone-50 md:inline-flex"
+          >
+            Resume
+          </a>
+          <a
             href="#contact"
             className="hidden items-center rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-[14px] font-medium text-accent-bright transition-colors hover:bg-accent hover:text-stone-950 md:inline-flex"
           >
