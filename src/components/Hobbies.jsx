@@ -2,13 +2,13 @@ import Section from "./Section.jsx";
 
 const HOBBY_GROUPS = [
   {
-    title: "Travelling",
-    description: "Discovering new places, stories, and perspectives.",
+    title: "Music",
+    description: "Finding new sounds and playlists for every mood.",
     images: [
-      "/images/hobbies/travel-1.svg",
-      "/images/hobbies/travel-2.svg",
-      "/images/hobbies/travel-3.svg",
-      "/images/hobbies/travel-4.svg",
+      "/images/hobbies/music/music-1.png",
+      "/images/hobbies/music/music-2.png",
+      "/images/hobbies/music/music-3.png",
+      "/images/hobbies/music/music-4.png",
     ],
   },
   {

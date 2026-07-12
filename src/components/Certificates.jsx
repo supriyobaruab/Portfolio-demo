@@ -52,7 +52,7 @@ export default function Certificates() {
               <img
                 src={cert.image}
                 alt={cert.name}
-                className="h-20 w-32 rounded-lg border border-line object-cover"
+                className="h-36 w-56 rounded-lg border border-line object-cover sm:h-40 sm:w-64"
               />
             </div>
           </div>
