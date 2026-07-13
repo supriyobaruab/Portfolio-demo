@@ -59,9 +59,11 @@ export default function Hero() {
               <span className="mono-label ml-3">profile.jpg</span>
             </div>
             <img
-              src="/images/profile.png"
+              src="/images/optimized/profile.jpg"
               alt="Supriyo Barua"
               className="aspect-auto w-80 object-cover"
+              decoding="async"
+              fetchPriority="high"
             />
           </div>
         </div>

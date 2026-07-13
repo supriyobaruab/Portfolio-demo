@@ -4,7 +4,7 @@ const PROJECTS = [
   {
     title: "Bachelor Meal Management System",
     path: "meal-house5A",
-    image: "/images/projects/meal-system.png",
+    image: "/images/optimized/projects/meal-system.jpg",
     imageAlt: "A home server rack with networking equipment",
     description:
       "A web application for managing daily meals, expenses, and member contributions in a bachelor household.",
@@ -13,7 +13,7 @@ const PROJECTS = [
   {
     title: "AIUB Notice Board",
     path: "discord-bots",
-    image: "/images/projects/discord-bots.png",
+    image: "/images/optimized/projects/discord-bots.jpg",
     imageAlt: "discord",
     description:
       "Automatically sends Discord notifications whenever a new notice is published on the AIUB Notice Board.",
@@ -22,7 +22,7 @@ const PROJECTS = [
   {
     title: "Cafe Management System",
     path: "cafe-management",
-    image: "/images/projects/cafe.png",
+    image: "/images/optimized/projects/cafe.jpg",
     imageAlt: "A home server rack with networking equipment",
     description:
       "A cafe management system that streamlines order processing, inventory tracking, billing, and daily business operations.",
@@ -31,7 +31,7 @@ const PROJECTS = [
   {
     title: "3Dify",
     path: "e-commerce",
-    image: "/images/projects/ecom.png",
+    image: "/images/optimized/projects/ecom.jpg",
     imageAlt: "A home server rack with networking equipment",
     description: "A Demo E-Commerce website for my friend's business",
     tech: ["HTML", "CSS", "JavaScript"],
@@ -39,7 +39,7 @@ const PROJECTS = [
   {
     title: "Personal Home Server",
     path: "home-server",
-    image: "/images/projects/home-server.png",
+    image: "/images/optimized/projects/home-server.jpg",
     imageAlt: "A home server rack with networking equipment",
     description:
       "A self-managed home server used to host services, learn networking, and retain control over personal digital tools.",
@@ -73,6 +73,8 @@ export default function Work() {
                 src={project.image}
                 alt={project.imageAlt}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="flex flex-1 flex-col p-6">

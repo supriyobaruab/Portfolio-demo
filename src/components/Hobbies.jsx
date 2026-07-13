@@ -6,20 +6,20 @@ const HOBBY_GROUPS = [
     title: "Travelling",
     description: "Discovering new places, stories, and perspectives.",
     images: [
-      "/images/hobbies/travel-1.mp4",
-      "/images/hobbies/travel-3.png",
-      "/images/hobbies/travel-2.png",
-      "/images/hobbies/travel-4.png",
+      "/images/optimized/hobbies/travel-1.mp4",
+      "/images/optimized/hobbies/travel-3.jpg",
+      "/images/optimized/hobbies/travel-2.jpg",
+      "/images/optimized/hobbies/travel-4.jpg",
     ],
   },
   {
     title: "Music",
     description: "Finding new sounds and playlists for every mood.",
     images: [
-      "/images/hobbies/music/music-1.png",
-      "/images/hobbies/music/music-2.png",
-      "/images/hobbies/music/music-3.png",
-      "/images/hobbies/music/music-4.png",
+      "/images/optimized/hobbies/music/music-1.jpg",
+      "/images/optimized/hobbies/music/music-2.jpg",
+      "/images/optimized/hobbies/music/music-3.jpg",
+      "/images/optimized/hobbies/music/music-4.jpg",
     ],
   },
   {
@@ -27,10 +27,10 @@ const HOBBY_GROUPS = [
     description:
       "Exploring the city, clearing the mind, and enjoying the road.",
     images: [
-      "/images/hobbies/biking-1.mp4",
-      "/images/hobbies/biking-2.png",
-      "/images/hobbies/biking-3.png",
-      "/images/hobbies/biking-4.png",
+      "/images/optimized/hobbies/biking-1.mp4",
+      "/images/optimized/hobbies/biking-2.jpg",
+      "/images/optimized/hobbies/biking-3.jpg",
+      "/images/optimized/hobbies/biking-4.jpg",
     ],
   },
 ];
@@ -102,7 +102,7 @@ function HobbyGroup({ title, description, images, index }) {
                   muted
                   loop
                   playsInline
-                  preload="metadata"
+                  preload="none"
                 >
                   <source
                     src={image}
@@ -121,6 +121,8 @@ function HobbyGroup({ title, description, images, index }) {
                   src={image}
                   alt={`${title} ${i + 1}`}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
               )}
 
