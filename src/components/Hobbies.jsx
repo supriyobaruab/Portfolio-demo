@@ -103,6 +103,7 @@ function HobbyGroup({ title, description, images, index }) {
                   loop
                   playsInline
                   preload="none"
+                  poster={image.replace(/\.(mp4|mov|webm)$/i, "-poster.jpg")}
                 >
                   <source
                     src={image}
