@@ -1,25 +1,31 @@
-import Section from './Section.jsx'
+import Section from "./Section.jsx";
 
 const CERTIFICATES = [
   {
-    name: 'Web Development Fundamentals',
-    issuer: 'Example Learning Platform',
-    year: '2025',
-    image: '/images/certificates/web-development-fundamentals.svg',
+    name: "Code to Cloud: Practical DevOps with AWS",
+    issuer: "Cloudly Infotech Limited",
+    year: "2025",
+    image: "/images/certificates/DevOps.jpg",
   },
   {
-    name: 'JavaScript Essentials',
-    issuer: 'Example Learning Platform',
-    year: '2025',
-    image: '/images/certificates/javascript-essentials.svg',
+    name: "IT Essentials",
+    issuer: "Cisco Networking Academy",
+    year: "2025",
+    image: "/images/certificates/IT_Essentials.jpg",
   },
   {
-    name: 'Git & GitHub Basics',
-    issuer: 'Example Learning Platform',
-    year: '2024',
-    image: '/images/certificates/git-github-basics.svg',
+    name: "From Idea to Paper: A Guided Research Writing Workshop",
+    issuer: "AIUB Research and Development Club",
+    year: "2025",
+    image: "/images/certificates/Research.png",
   },
-]
+  {
+    name: "Science Fair",
+    issuer: "Science Club, Bandarban Cantonment Public School & College",
+    year: "2022",
+    image: "/images/certificates/BCPSC.JPG",
+  },
+];
 
 export default function Certificates() {
   return (
@@ -49,15 +55,33 @@ export default function Certificates() {
               <p className="mb-4 text-sm font-medium text-accent-bright/90">
                 {cert.issuer}
               </p>
-              <img
-                src={cert.image}
-                alt={cert.name}
-                className="h-36 w-56 rounded-lg border border-line object-cover sm:h-40 sm:w-64"
-              />
+              <a
+                href={cert.image}
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block w-fit focus:outline-none"
+                aria-label={`Open ${cert.name} certificate in full size`}
+              >
+                <img
+                  src={cert.image}
+                  alt={cert.name}
+                  className="aspect-[1.38/1] w-72 rounded-lg border border-line bg-stone-900 object-contain shadow-sm transition duration-300 ease-out sm:w-96 group-hover:border-accent/70 group-focus:border-accent/70"
+                />
+                <span className="absolute bottom-3 left-3 rounded bg-stone-950/80 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-stone-200 backdrop-blur-sm transition-opacity duration-200 group-hover:opacity-0 group-focus:opacity-0">
+                  Hover to preview
+                </span>
+                <div className="pointer-events-none absolute left-0 top-0 z-20 w-[min(42rem,calc(100vw-3rem))] origin-top-left scale-[0.97] rounded-xl border border-accent/70 bg-stone-950 p-2 opacity-0 shadow-2xl shadow-black/60 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 group-focus:scale-100 group-focus:opacity-100">
+                  <img
+                    src={cert.image}
+                    alt=""
+                    className="max-h-[75vh] w-full rounded-lg object-contain"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         ))}
       </div>
     </Section>
-  )
+  );
 }
