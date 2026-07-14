@@ -27,7 +27,13 @@
       "Bash(node screenshot.mjs)",
       "Bash(node debug-nav.mjs)",
       "Bash(node debug-nav2.mjs)",
-      "Bash(node mobile-nav.mjs)"
+      "Bash(node mobile-nav.mjs)",
+      "Bash(cp /private/tmp/claude-502/-Users-Supriyo-Desktop-Portfolio/ce79587f-1937-4632-bc4f-37740c125541/scratchpad/screenshot-about.mjs /Users/Supriyo/screenshot-about.mjs)",
+      "Bash(node screenshot-about.mjs)",
+      "Bash(rm /Users/Supriyo/screenshot-about.mjs)"
+    ],
+    "additionalDirectories": [
+      "/Users/Supriyo"
     ]
   }
 }

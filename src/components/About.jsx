@@ -17,6 +17,28 @@ const INTERESTS = [
   "Cycling",
 ];
 
+const ABOUT_IMAGES = [
+  {
+    src: "/images/1.jpg",
+    alt: "Supriyo Barua standing outdoors",
+    label: "outdoors.jpg",
+    className: "left-2 top-0 w-[46%] -rotate-6 sm:left-6",
+  },
+  {
+    src: "/images/2.png",
+    alt: "Supriyo Barua at an event",
+    label: "profile.jpg",
+    className: "right-0 top-6 z-10 w-[50%] rotate-[7deg] sm:top-8",
+  },
+  {
+    src: "/images/3.png",
+    alt: "A biking trip at sunrise",
+    label: "biking.jpg",
+    className:
+      "bottom-8 left-[26%] z-20 w-[46%] rotate-[8deg] sm:bottom-10 sm:left-[28%]",
+  },
+];
+
 export default function About() {
   return (
     <Section
@@ -66,25 +88,32 @@ export default function About() {
           </div>
         </div>
 
-        {/* <figure className="lg:col-span-5">
-          <div className="surface-card overflow-hidden rounded-xl">
-            <div className="flex items-center gap-2 border-b border-line px-4 py-2.5">
-              <span className="terminal-dot bg-stone-600" />
-              <span className="terminal-dot bg-stone-700" />
-              <span className="terminal-dot bg-accent/80" />
-              <span className="mono-label ml-3">profile.jpg</span>
-            </div>
-            <img
-              src="/images/profile."
-              alt="Supriyo Barua"
-              className="aspect-[4/4.4] w-full object-cover"
-            />
-            <figcaption className="flex items-center justify-between border-t border-line px-4 py-2.5">
-              <span className="mono-label">Supriyo Barua</span>
-              <span className="mono-label text-stone-600">Web Developer</span>
-            </figcaption>
+        <figure className="mx-auto w-full max-w-xl lg:col-span-5 lg:ml-auto lg:mr-0 lg:mt-2 lg:translate-x-8 xl:translate-x-10">
+          <div className="relative aspect-[4/5] sm:aspect-[9/10]">
+            <div className="absolute inset-[8%] rounded-full bg-accent/10 blur-3xl" />
+            {ABOUT_IMAGES.map((image) => (
+              <div
+                key={image.src}
+                className={`absolute overflow-hidden rounded-xl border-2 border-line bg-card shadow-2xl shadow-black/50 transition duration-500 ease-out hover:z-30 hover:scale-105 hover:rotate-0 ${image.className}`}
+              >
+                <div className="flex items-center gap-1.5 border-b border-line px-2.5 py-1.5 ">
+                  <span className="terminal-dot bg-stone-600" />
+                  <span className="terminal-dot bg-stone-700" />
+                  <span className="terminal-dot bg-accent/80" />
+                </div>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  loading="lazy"
+                  className="aspect-[4/5] w-full object-cover"
+                />
+              </div>
+            ))}
           </div>
-        </figure> */}
+          <figcaption className="mono-label mt-4 text-center text-stone-500">
+            snippets from the journey
+          </figcaption>
+        </figure>
       </div>
     </Section>
   );
