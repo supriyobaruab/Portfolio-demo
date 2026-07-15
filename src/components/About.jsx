@@ -14,7 +14,7 @@ const INTERESTS = [
   "Personal Automation",
   "MongoDB",
   "Travel",
-  "Cycling",
+  "Biking",
 ];
 
 const ABOUT_IMAGES = [

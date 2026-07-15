@@ -5,7 +5,14 @@ const CATEGORIES = [
     title: "Frontend",
     icon: "code",
     path: "~/frontend",
-    skills: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    skills: [
+      "HTML & CSS",
+      "JavaScript",
+      "Tailwind CSS",
+      "React.js",
+      "Laravel",
+      "PHP",
+    ],
   },
   {
     title: "Backend",

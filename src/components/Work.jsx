@@ -11,7 +11,7 @@ const PROJECTS = [
     tech: ["Node.js", "Express.js"],
   },
   {
-    title: "AIUB Notice Board",
+    title: "AIUB Notice Bot",
     path: "discord-bots",
     image: "/images/optimized/projects/discord-bots.jpg",
     imageAlt: "discord",
